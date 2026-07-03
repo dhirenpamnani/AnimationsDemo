@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity Analytics — See the story in your data</title>
+<meta name="description" content="Clarity turns raw, messy data into clear, insightful dashboards your whole team can act on.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="brand" aria-label="Clarity Analytics home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="9" fill="url(#brandGrad)"/>
+          <path d="M9 21V15" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M16 21V11" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M23 21V17" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="brandGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3B82F6"/>
+              <stop offset="1" stop-color="#1E40AF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand-name">Clarity</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#showcase">Product</a>
+      <a href="#insights">Insights</a>
+      <a href="#features">Features</a>
+      <a href="#footer">Company</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <a href="#footer" class="btn btn-ghost">Sign in</a>
+      <a href="#footer" class="btn btn-primary">Start free trial</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#showcase">Product</a>
+    <a href="#insights">Insights</a>
+    <a href="#features">Features</a>
+    <a href="#footer">Company</a>
+    <a href="#footer" class="btn btn-primary btn-block">Start free trial</a>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ===================== HERO PARALLAX ===================== -->
+  <section class="hero-parallax" id="showcase" aria-label="Product showcase">
+    <div class="hero-parallax-header">
+      <p class="eyebrow">Analytics, reimagined</p>
+      <h1>Turn raw data into<br>dashboards people actually read</h1>
+      <p class="lead">
+        Clarity connects to every source you already use and turns the noise into clean,
+        real-time dashboards &mdash; so your team spends time deciding, not digging.
+      </p>
+      <div class="hero-cta">
+        <a href="#footer" class="btn btn-primary btn-lg">Get started free</a>
+        <a href="#insights" class="btn btn-outline btn-lg">See it in action</a>
+      </div>
+    </div>
+
+    <div class="hero-parallax-track" id="parallaxTrack">
+      <div class="parallax-rows" id="parallaxRows">
+        <div class="parallax-row" data-row="1"></div>
+        <div class="parallax-row" data-row="2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CANVAS TEXT SECTION ===================== -->
+  <section class="insight-section" id="insights" aria-label="Product philosophy">
+    <canvas id="trailCanvas" aria-hidden="true"></canvas>
+    <div class="insight-content">
+      <p class="eyebrow eyebrow-light">Signal, not noise</p>
+      <h2>Every metric has a story.<br>Clarity finds the thread.</h2>
+      <p class="lead lead-light">
+        Move your cursor around &mdash; that's how your data feels once Clarity gets to it:
+        connected, alive, and easy to follow from raw signal to clear decision.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURE CARDS ===================== -->
+  <section class="features" id="features" aria-label="Features">
+    <div class="features-header">
+      <p class="eyebrow">Everything you need</p>
+      <h2>One platform for the whole data journey</h2>
+      <p class="lead">From ingestion to insight, without stitching together five different tools.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15v-3m4 3V9m4 6v-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Real-time dashboards</h3>
+        <p>Live-updating charts and KPI cards that refresh as new data lands &mdash; no manual exports.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.4-6.4-2.1 2.1M8.7 15.3l-2.1 2.1m0-10.8 2.1 2.1m8.7 8.7-2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>50+ native integrations</h3>
+        <p>Connect Stripe, HubSpot, Postgres, Shopify and more in a few clicks &mdash; no engineers required.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12c2-4 5-6 9-6s7 2 9 6c-2 4-5 6-9 6s-7-2-9-6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>Anomaly &amp; trend alerts</h3>
+        <p>Clarity watches your metrics around the clock and pings you the moment something matters.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 4.5a3 3 0 0 1 0 5.8M21 20c0-2.6-2-4.8-4.8-5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Built for teams</h3>
+        <p>Shared workspaces, commenting, and granular access controls so everyone sees the right slice.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M8 14h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Drag-and-drop reports</h3>
+        <p>Build custom reports and export polished PDFs or share a live link &mdash; no design skills needed.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="10" width="4" height="9" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="10" y="5" width="4" height="14" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="16" y="13" width="4" height="6" rx="1" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>Enterprise-grade security</h3>
+        <p>SOC 2 Type II, SSO, and role-based permissions keep sensitive data exactly where it belongs.</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer" id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#top" class="brand" aria-label="Clarity Analytics home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="9" fill="url(#brandGrad2)"/>
+            <path d="M9 21V15" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M16 21V11" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M23 21V17" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="brandGrad2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3B82F6"/>
+                <stop offset="1" stop-color="#1E40AF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-name">Clarity</span>
+      </a>
+      <p>Insightful dashboards from your raw data, in minutes.</p>
+      <div class="social-row">
+        <a href="#footer" aria-label="Clarity on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 3H21l-6.5 7.4L22.2 21h-6.4l-5-6.6-5.7 6.6H2.9l7-8-7.8-9.9h6.6l4.5 6 5.9-6Zm-1.1 16h1.7L7.3 4.9H5.5L17.8 19Z"/></svg></a>
+        <a href="#footer" aria-label="Clarity on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V20H9.5V8.5h3.24v1.57h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.43 2.27 4.43 5.22V20Z"/></svg></a>
+        <a href="#footer" aria-label="Clarity on GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.92.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#showcase">Dashboards</a>
+      <a href="#features">Integrations</a>
+      <a href="#features">Alerts</a>
+      <a href="#footer">Pricing</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#footer">About</a>
+      <a href="#footer">Careers</a>
+      <a href="#footer">Blog</a>
+      <a href="#footer">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#footer">Privacy</a>
+      <a href="#footer">Terms</a>
+      <a href="#footer">Security</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Clarity Analytics, Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
